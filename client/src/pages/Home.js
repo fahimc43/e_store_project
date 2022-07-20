@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
+import NewsLetter from "../components/NewsLetter/NewsLetter";
 import Shop from "../components/Shop/Shop";
 import Slider from "../components/Slider/Slider";
 
@@ -24,6 +25,7 @@ function Home() {
       <Navbar cart={cart} />
       <Slider />
       <Shop products={products} handleAddToCart={handleAddToCart} />
+      <NewsLetter />
     </div>
   );
 }
